@@ -167,4 +167,38 @@ image: 'character_images/grimsley.png'
 ];
 
 
+/***
+ * `getRandomQuote` function
+***/
+
+function generateRandomQuote(quoteArray) {
+  let randomIndex = Math.floor(Math.random() * quoteArray.length);
+  let returnQuote = quoteArray[randomIndex];
+  return returnQuote;
+ 
+}
+console.log(generateRandomQuote(videoGameQuotes));
+ 
+  
+
+
+
+
+// console.log(getRandomQuote(videoGameQuotes.quote));
+/***
+ * `printQuote` function
+***/
+// function printQuote(printQuotetArray) {
+
+// }
+
+
+/***
+ * click event listener for the print quote button
+ * DO NOT CHANGE THE CODE BELOW!!
+***/
+
+document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+
 
