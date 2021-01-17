@@ -6,7 +6,8 @@
  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
 
 body {
-  background-color: rgb(58, 193, 98);
+  /* background-color: rgb(58, 193, 98); */
+  background-color: #222831;
   color: white;
   font-family: 'Playfair Display', serif;
   padding: 5px;
@@ -144,7 +145,7 @@ h1 {
   }
 
   .quote {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .quote:before,
@@ -163,4 +164,11 @@ h1 {
   .source {
     font-size: 1.25rem;
   }
+.quoteImage{
+  margin-top: 20px;
+  width: 75%;
+  height: 75%;
+  
+}
+  
 }
