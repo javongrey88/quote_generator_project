@@ -74,7 +74,7 @@ character: 'Alan Wake',
 image: 'character_images/alan_wake.png'
 },
 {quote: `Don't wish that it were easier, wish you were better.`,
-character: 'cheif',
+character: 'chief',
 citation: 'Animal Crossing',
 year: '2001',
 image: 'character_images/chief.png'
@@ -133,60 +133,6 @@ image: 'character_images/grimsley.png'
 ];
 
 
-/***
- * `getRandomQuote` function
-***/
-
-function getRandomQuote(quoteArray) {
-  let randomIndex = Math.floor(Math.random() * quoteArray.length);
-  let returnQuote = quoteArray[randomIndex];
-  return returnQuote;
- 
-}
-
- 
-
-// console.log(getRandomQuote(quotes).citation);
-
-
-
-
-/***
- * `printQuote` function
-***/
-function printQuote(printRandomQuote) {
-  let main = document.querySelector('main');
-  let html = ' ';
-  if(printRandomQuote.citation && printRandomQuote.year) {
-    html = `
-    <p class='quote'>${printRandomQuote.quote}</p>
-    <p class='source'>${printRandomQuote.character}
-    <span class='citation'>${printRandomQuote.citation}</span>
-    <span class='year'>${printRandomQuote.year}</span>
-    <img class='quoteImage' src='${printRandomQuote.image}'>
-    </p>
-    `
-  } else {
-    html = `
-    <p class='quote'>${printRandomQuote.quote}</p>
-    <p class='source'>${printRandomQuote.character}
-    <img class='quoteImage' src='${printRandomQuote.image}'>
-    </p>
-    `
-  }
-  
-  return main.innerHTML = html;
-}
-
-printQuote(getRandomQuote(quotes));
-
-
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
-***/
-
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
 
 
 
