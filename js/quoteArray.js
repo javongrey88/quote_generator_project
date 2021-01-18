@@ -1,17 +1,6 @@
-/******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-/*** 
- * `quotes` array 
-***/
-
-//This array holds multiple objects for the quote generator. Objects include quotes and associated information
+//This array holds multiple objects to be called from the quoteGenerator.js file. Objects include quotes and associated information.
 const quotes = [
 {quote: 'We all make choices in life, but in the end our choices make us.',
 character: 'Andrew Ryan',
