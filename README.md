@@ -25,7 +25,7 @@ index.html
 -holds all the html structure for the program. 
 
 Instructions:
-Run the program in you chosen brower, and click the change quote button to 
+Run the program in your chosen brower, and click the change quote button to 
 generate a random quote. There are a total of twenty quotes which will be displayed to the browser randomly. 
 
 Enjoy :)
